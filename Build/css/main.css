@@ -43,6 +43,7 @@ header #mediosTop p {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  color: #0c2073;
 }
 footer {
   border-top: 1px solid #24394f;
