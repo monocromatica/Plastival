@@ -10,56 +10,149 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 		
-		<!-- @stylesheet bootstrap main jasmine -->
+		<!-- @stylesheet bootstrap main layerslider -->
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,400,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="skins/defaultskin/skin.css" />
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">Tu navegador es <strong>anticuado.</strong> Por favor <a href="http://browsehappy.com/">actualizalo</a> para tener una mejor experiencia del sitio.</p>
         <![endif]-->
-		<!-- @include _header.html -->
+		<!-- @include _header.html -->		
+	
+		<div id="layerslider" class="hide-for-small" style="width: 100%; height:620px; z-index:-1000;">
+	
+		    <div class="ls-layer" rel="slidedelay: 3000;" style="background: url(img/slider/sliderBG01.jpg) center center;">
+		    	<img class="ls-s3" src="img/slider/slider01.png" alt="sublayer" style="left: 65%; margin-top:.2%;">
+		    	<p style="left: 30%; top:50%; color: #ffffff;font-family:'Lato', sans-serif;font-size:3em;text-align:center;">Lider en <br />exhibidores</p>
+		    </div>
 		
-	<div id="slide-container">
-		<div class="item">
-			<div class="background">
-				<img src="../img/slider/sliderBG01.jpg"/>
-			</div>
-
-			<div class="foreground">
-				<div class="element" id="exhibidores">
-					<img src="../img/slider/slider01.png" alt="Exhibidores" />
+		    <div class="ls-layer" rel="slidedelay: 3000;" style="background: url(img/slider/sliderBG01.jpg) center center">
+		    	<img class="ls-s5" src="img/slider/slider01.png" alt="sublayer" style="left: 65%; margin-top:.2%;">
+		    	<a href="#" target="_self" class="button secondary round small" style="left: 50%; top: 580px;  color: #666666; width: 100px; margin-left: -50px;">ver proyecto</a>
+		    </div>
+	   	</div><!-- termina #layerslider -->
+	 <div class="container">
+	   	<div id="menu4">
+		   	<div class="row">
+			   	<div id="productos" class="lista col-md-5">
+			   		<h3><img src="../img/iproductos.png" alt="productos" class="iconos4"/>PRODUCTOS</h3>
+			   		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut interdum leo. Phasellus et ante diam. Praesent porttitor sed mauris nec feugiat. Fusce placerat facilisis pretium. Donec non rutrum metus, congue placerat lacus. Integer in pretium magna. Sed sed neque sed leo ornare interdum. Proin in ultrices tortor. Nullam gravida consequat est in vestibulum. <br />
+	Quisque fermentum sollicitudin turpis id commodo. Phasellus quis consequat sapien. Integer auctor, eros eu mattis pulvinar, diam arcu volutpat tortor, nec ultricies nulla diam placerat sem. Proin blandit libero commodo, scelerisque felis ultricies, condimentum est. Integer varius lectus ac purus egestas vulputate. Morbi non consectetur ligula. Sed bibendum a metus sit amet facilisis. Phasellus bibendum mi et lacus posuere dignissim.</p>
 				</div>
-				<div class="element" id="logo"><img src="../img/logo.jpg" alt="nada" /></div>
-				<div class="element" id="lider"><p>LIDER EN EXHIBIDORES</p></div>
+			   	<div id="procesos" class="lista col-md-5">
+			   		<h3><img src="../img/iproceso.png" alt="procesos" class="iconos4"/>PROCESOS</h3>
+			   		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut interdum leo. Phasellus et ante diam. Praesent porttitor sed mauris nec feugiat. Fusce placerat facilisis pretium. Donec non rutrum metus, congue placerat lacus. Integer in pretium magna. Sed sed neque sed leo ornare interdum. Proin in ultrices tortor. Nullam gravida consequat est in vestibulum. <br />
+	
+	Quisque fermentum sollicitudin turpis id commodo. Phasellus quis consequat sapien. Integer auctor, eros eu mattis pulvinar, diam arcu volutpat tortor, nec ultricies nulla diam placerat sem. Proin blandit libero commodo, scelerisque felis ultricies, condimentum est. Integer varius lectus ac purus egestas vulputate. Morbi non consectetur ligula. Sed bibendum a metus sit amet facilisis. Phasellus bibendum mi et lacus posuere dignissim.</p>
+				</div>
+		  		<div id="nosotros" class="lista col-md-5">
+		   			<h3><img src="../img/inosotros.png" alt="nosotros" class="iconos4"/>NOSOTROS</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut interdum leo. Phasellus et ante diam. Praesent porttitor sed mauris nec feugiat. Fusce placerat facilisis pretium. Donec non rutrum metus, congue placerat lacus. Integer in pretium magna. Sed sed neque sed leo ornare interdum. Proin in ultrices tortor. Nullam gravida consequat est in vestibulum. <br />
+				
+				Quisque fermentum sollicitudin turpis id commodo. Phasellus quis consequat sapien. Integer auctor, eros eu mattis pulvinar, diam arcu volutpat tortor, nec ultricies nulla diam placerat sem. Proin blandit libero commodo, scelerisque felis ultricies, condimentum est. Integer varius lectus ac purus egestas vulputate. Morbi non consectetur ligula. Sed bibendum a metus sit amet facilisis. Phasellus bibendum mi et lacus posuere dignissim.</p>
+				</div>
+		   		<div id="clientes" class="lista col-md-5">
+		   			<h3><img src="../img/iclientes.png" alt="servicios" class="iconos4"/>CLIENTES</h3>
+		   			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut interdum leo. Phasellus et ante diam. Praesent porttitor sed mauris nec feugiat. Fusce placerat facilisis pretium. Donec non rutrum metus, congue placerat lacus. Integer in pretium magna. Sed sed neque sed leo ornare interdum. Proin in ultrices tortor. Nullam gravida consequat est in vestibulum. <br />
+	
+	Quisque fermentum sollicitudin turpis id commodo. Phasellus quis consequat sapien. Integer auctor, eros eu mattis pulvinar, diam arcu volutpat tortor, nec ultricies nulla diam placerat sem. Proin blandit libero commodo, scelerisque felis ultricies, condimentum est. Integer varius lectus ac purus egestas vulputate. Morbi non consectetur ligula. Sed bibendum a metus sit amet facilisis. Phasellus bibendum mi et lacus posuere dignissim.</p>
+				</div>
 			</div>
 		</div>
-		<p id="slide-pagination">
-			<a href="#" rel="prev">Previous</a> - <a href="#" rel="next">Next</a>
-		</p>
-	</div>		
+   	</div>
+   	<div id="populares">
+   		<div class="row">
+   			<div class="col-md-12">
+   				<div id="encabezado_populares" class="col-md-6">
+		   			<h1>PRODUCTOS POPULARES</h1>
+		   			<hr>
+		   		</div>
+		   		<div id="imagenes_productos" class="col-md-12">
+			   		<a href="#"><img src="http://placekitten.com/200/300" alt="gatitos" /></a>
+			   		<a href="#"><img src="http://placekitten.com/200/300" alt="gatitos" /></a>
+			   		<a href="#"><img src="http://placekitten.com/200/300" alt="gatitos" /></a>
+			   		<a href="#"><img src="http://placekitten.com/200/300" alt="gatitos" /></a>
+			   		<a href="#"><img src="http://placekitten.com/200/300" alt="gatitos" /></a>
+			   		<a href="#"><img src="http://placekitten.com/200/300" alt="gatitos" /></a>
+		   		</div>
+		   		<div id="btnProductos" class="col-md-4">
+			   		<a href="#"><button type="button" class="btn btn-primary btn-lg azul">Ver más...</button></a>
+		   		</div>
+		   	</div>
+		</div>
+	</div>
+	<div id="clientes">
+		<div class="row">
+   			<div class="col-md-12">
+   				<div id="encabezado_clientes" class="col-md-6">
+		   			<h1>ALGUNOS DE NUESTROS CLIENTES</h1>
+		   			<hr>
+		   		</div>
+		   		<div id="imagenes_clientes" class="col-md-8">
+			   		<a href="#" class="col-md-3"><img src="http://placekitten.com/300/200" alt="gatitos" class="redondear"/></a>
+			   		<a href="#" class="col-md-3"><img src="http://placekitten.com/300/200" alt="gatitos" class="redondear"/></a>
+			   		<a href="#" class="col-md-3"><img src="http://placekitten.com/300/200" alt="gatitos" class="redondear"/></a>
+			   		<a href="#" class="col-md-3"><img src="http://placekitten.com/300/200" alt="gatitos" class="redondear"/></a>
+		   		</div>
+		   		<div id="btnClientes" class="col-md-4">
+			   		<a href="#"><button type="button" class="btn btn-primary btn-lg azul">Ver más...</button></a>
+		   		</div>
+		   	</div>
+		</div>
+	</div>
+	<div id="map-canvas">
 		
-
-
+	</div>
 
 		
 		<!-- @include _footer.html -->
+		<script type="text/javascript">
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-		<!-- @javascript bootstrap.min main destaqueSpec jasmine-html jasmine-jquery jasmine jquery-ui-1.8.18 jquery.mobile.events-->
+		<!-- @javascript bootstrap.min main jquery.easing.1.3.min layerslider.kreaturamedia.jquery-min -->
 		<script type="text/javascript">
-			 $("#slide-container").destaque({
-			 	  slideMovement: 100,
-			 	  slideSpeed: 1000,
-			 	  elementSpeed: 1100,
-			 	  easingType: "easeInOutExpo",
-				  itemSelector: ".item",
-				  itemBackgroundSelector: ".background",
-				  itemForegroundElementSelector: ".foreground .element",
-				  controlsSelector: "#slide-pagination a"
+			$(document).ready(function(){
+				$('#layerslider').layerSlider({
+					autoStart           : true,
+				    firstLayer          : 1,
+				    twoWaySlideshow     : false,
+				    keybNav             : true,
+				    imgPreload          : true,
+				    pauseOnHover        : true,
+				    globalBGImage       : false,
+				    animateFirstLayer   : false,
+				    yourLogo            : 'img/logo.png',
+				    yourLogoStyle       : 'position: absolute; z-index: 1001; left: 25%; top: 20%;',
+				    yourLogoLink        : false,
+				    yourLogoTarget      : '_blank',
+
+
+					skinsPath : '/skins',
+					skin : 'default',
+					globalBGColor : '#333',
+					navPrevNext         : true,
+					navStartStop        : false,
+					navButtons          : true,
+				});
 			});
 		</script>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false">function initialize() {
+	 	  var marker;
+	 	  //opcines del mapa
+        var myOptions = {
+          center: new google.maps.LatLng(22.709056, -101.997070),
+          zoom: 5,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        //constructor del mapa
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            myOptions);</script>
 		
+         
 		<!-- @include _analytics.html -->
     </body>
 </html>
