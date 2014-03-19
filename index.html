@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 		
-		<!-- @stylesheet bootstrap main -->
+		<!-- @stylesheet bootstrap main jasmine -->
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,400,900' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -20,7 +20,24 @@
         <![endif]-->
 		<!-- @include _header.html -->
 		
-		
+	<div id="slide-container">
+		<div class="item">
+			<div class="background">
+				<img src="../img/slider/sliderBG01.jpg"/>
+			</div>
+
+			<div class="foreground">
+				<div class="element" id="exhibidores">
+					<img src="../img/slider/slider01.png" alt="Exhibidores" />
+				</div>
+				<div class="element" id="logo"><img src="../img/logo.jpg" alt="nada" /></div>
+				<div class="element" id="lider"><p>LIDER EN EXHIBIDORES</p></div>
+			</div>
+		</div>
+		<p id="slide-pagination">
+			<a href="#" rel="prev">Previous</a> - <a href="#" rel="next">Next</a>
+		</p>
+	</div>		
 		
 
 
@@ -29,7 +46,20 @@
 		<!-- @include _footer.html -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-		<!-- @javascript bootstrap.min main -->
+		<!-- @javascript bootstrap.min main destaqueSpec jasmine-html jasmine-jquery jasmine jquery-ui-1.8.18 jquery.mobile.events-->
+		<script type="text/javascript">
+			 $("#slide-container").destaque({
+			 	  slideMovement: 100,
+			 	  slideSpeed: 1000,
+			 	  elementSpeed: 1100,
+			 	  easingType: "easeInOutExpo",
+				  itemSelector: ".item",
+				  itemBackgroundSelector: ".background",
+				  itemForegroundElementSelector: ".foreground .element",
+				  controlsSelector: "#slide-pagination a"
+			});
+		</script>
+		
 		<!-- @include _analytics.html -->
     </body>
 </html>
