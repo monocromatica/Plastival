@@ -154,9 +154,6 @@
 				</div>
 			</div>
 		</footer>
-		<script type="text/javascript">
-			google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 		<script src='js/vendor/bootstrap.min.js'></script>
@@ -188,20 +185,39 @@
 					navButtons          : true,
 				});
 			});
-		</script>
-		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false">function initialize() {
-	 	  var marker;
-	 	  //opcines del mapa
-        var myOptions = {
-          center: new google.maps.LatLng(22.709056, -101.997070),
-          zoom: 5,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        //constructor del mapa
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
-            myOptions);</script>
 		
-         
+		</script>
+		<script src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+		<script type="text/javascript">
+			function initialize() {
+				  var image = 'img/marker.png';
+				  var myLatlng = new google.maps.LatLng(20.644008, -103.342886);
+				  var mapOptions = {
+				    zoom: 15,
+					center: myLatlng
+				}
+				var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+				var marker = new google.maps.Marker({
+					position: myLatlng,
+					map: map,
+					title: 'Plastival',
+					animation: google.maps.Animation.DROP,
+					icon: image
+				});
+				var infowindow = new google.maps.InfoWindow({
+					content: '<div id="content">' + '<div id="siteNotice">' + '</div>' + '<div id="imgInfoW">' + '<img src="img/logoFooter.jpg" alt="logo Plastival"/>' + '</div>' + '</div>'
+				});
+	
+				infowindow.open(map,marker);
+				
+				google.maps.event.addListener(marker, 'click', function() {
+					infowindow.open(map,marker);
+				});
+				
+			}	
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
 		        <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

@@ -136,3 +136,142 @@ footer {
   width: 100%;
   height: 500px;
 }
+/*--------------------------------------------
+					Nosotros
+--------------------------------------------*/
+#imgHeaderNosotros {
+  width: 100%;
+  height: 270px;
+  background-image: url('img/sliderNosotros.jpg');
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+}
+.tituloS {
+  font-size: 5em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+  padding: 2% 0 2% 2%;
+}
+.textoNosotros {
+  color: #999;
+}
+.grisOscuro {
+  color: #555;
+}
+#inicios hr {
+  border-color: #0c2073;
+  border-width: 2px;
+}
+#inicios h2 {
+  color: #0c2073;
+}
+/*--------------------------------------------
+					Procesos
+--------------------------------------------*/
+#imgHeaderProcesos {
+  width: 100%;
+  height: 270px;
+  background-image: url('img/sliderProceso.jpg');
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+}
+#procesos hr {
+  border-color: #0c2073;
+  border-width: 2px;
+}
+#procesos h2 {
+  color: #0c2073;
+}
+#imgSide {
+  padding-bottom: 5%;
+}
+.accordion h4 {
+  color: #ffffff;
+  font-style: 'Lato', sans-serif;
+  font-weight: 100;
+}
+.accordion .panel-heading {
+  background-color: #0c2073 !important;
+}
+.accordion .panel-body {
+  background-color: #EBEBEB !important;
+}
+.accordion .imagenPequena {
+  width: 5%;
+  height: 5%;
+  margin: 0 5% 0 0;
+}
+.accordion .imagenPrueba {
+  float: left;
+  margin: 10px;
+}
+/*--------------------------------------------
+					Productos
+--------------------------------------------*/
+#imgHeaderProductos {
+  width: 100%;
+  height: 270px;
+  background-image: url('img/sliderProd.jpg');
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+}
+#productos hr {
+  border-width: 2px;
+  border-color: #000;
+}
+#productos .listaProductos {
+  list-style: none;
+  color: ;
+}
+#productos .side {
+  background-color: #F7F7F7;
+}
+#productos .imgRedon {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #F7F7F7;
+  margin: 10px 20px 15px -20px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.35);
+}
+#productos .listaLetras {
+  color: #999;
+  font-style: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: large;
+}
+#productos .listaLetras hr {
+  border-width: 1px;
+  border-color: #999;
+  margin-left: -30px;
+  margin-right: 10px;
+}
+#productos #categorias {
+  background-color: #178ED0;
+  color: #fff;
+  margin: 0 0 20px -40px;
+  padding: 3% 0 5% 10%;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 10px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#productos #descargar {
+  padding: 20px;
+  margin-left: -30px;
+}
