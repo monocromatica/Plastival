@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 		
-		<!-- @stylesheet bootstrap main -->
+		<!-- @stylesheet bootstrap main venobox -->
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,400,900' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -64,20 +64,71 @@
 						</ul>
 					</div>
 					<div id="div1" class="col-md-8 targetDiv">
-						<h2>Standar</h2>
+						<h2>Standard</h2>
 							<hr>
 								<p class="textoNosotros">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare justo eget imperdiet vehicula. Phasellus imperdiet dignissim velit sit amet varius. Aliquam augue neque, tempor non ante id, dictum congue dolor. Praesent placerat augue quis feugiat lobortis. Pellentesque eu venenatis massa. Aliquam erat volutpat. Curabitur at nibh eu eros ullamcorper tristique. Donec euismod tincidunt faucibus. Pellentesque pharetra metus vel nibh ultricies, eget rutrum tellus aliquam. Sed enim leo, mattis quis ipsum at, vestibulum lobortis sapien. Quisque et enim ut sapien tempor tincidunt. Integer gravida viverra nisi, id cursus diam feugiat viverra. Nullam bibendum justo eu consectetur scelerisque.</p>	
 						<div class="row">
 							<div class="col-md-4">
 								<ul class="listaProductos">
-									<li>
-										<img src="img/productosS.jpg" alt="Im&aacute;gen de producto" class="imgRedon img-responsive" />
+									<li class="tamano">
+										<a href="img/catalogo/standard/st-001.jpg" class="venobox" data-gall="complementos">
+											<img src="img/catalogo/standard/small/st-001.jpg" alt="Im&aacute;gen de producto" class="imgRedon img-responsive" />
+										</a>
 									</li>
 									<li>
-										<img src="img/productosS.jpg" alt="Im&aacute;gen de producto" class="imgRedon img-responsive" />
+										<a href="img/catalogo/standard/st-002.jpg" class="venobox" data-gall="complementos">
+											<img src="img/catalogo/standard/small/st-002.jpg" alt="Im&aacute;gen de producto" class="imgRedon img-responsive" />
+										</a>
 									</li>
 									<li>
-										<img src="img/productosS.jpg" alt="Im&aacute;gen de producto" class="imgRedon img-responsive" />
+										<a href="img/catalogo/standard/st-003.jpg" class="venobox" data-gall="complementos">
+											<img src="img/catalogo/standard/small/st-003.jpg" alt="Im&aacute;gen de producto" class="imgRedon img-responsive" />
+										</a>
+									</li>
+									<li>
+										<a href="img/catalogo/standard/st-004.jpg" class="venobox" data-gall="complementos">
+											<img src="img/catalogo/standard/small/st-004.jpg" alt="Im&aacute;gen de producto" class="imgRedon img-responsive" />
+										</a>
+									</li>
+									<li>
+										<a href="img/catalogo/standard/st-005.jpg" class="venobox" data-gall="complementos">
+											<img src="img/catalogo/standard/small/st-005.jpg" alt="Im&aacute;gen de producto" class="imgRedon img-responsive" />
+										</a>
+									</li>
+									<li>
+										<a href="img/catalogo/standard/st-006.jpg" class="venobox" data-gall="complementos">
+											<img src="img/catalogo/standard/small/st-006.jpg" alt="Im&aacute;gen de producto" class="imgRedon img-responsive" />
+										</a>
+									</li>
+									<li>
+										<a href="img/catalogo/standard/st-007.jpg" class="venobox" data-gall="complementos">
+											<img src="img/catalogo/standard/small/st-007.jpg" alt="Im&aacute;gen de producto" class="imgRedon img-responsive" />
+										</a>
+									</li>
+									<li>
+										<a href="img/catalogo/standard/st-008.jpg" class="venobox" data-gall="complementos">
+											<img src="img/catalogo/standard/small/st-008.jpg" alt="Im&aacute;gen de producto" class="imgRedon img-responsive" />
+										</a>
+									</li>
+									<li>
+										<a href="img/catalogo/standard/st-009.jpg" class="venobox" data-gall="complementos">
+											<img src="img/catalogo/standard/small/st-009.jpg" alt="Im&aacute;gen de producto" class="imgRedon img-responsive" />
+										</a>
+									</li>
+									<li>
+										<a href="img/catalogo/standard/st-010.jpg" class="venobox" data-gall="complementos">
+											<img src="img/catalogo/standard/small/st-010.jpg" alt="Im&aacute;gen de producto" class="imgRedon img-responsive" />
+										</a>
+									</li>
+									<li>
+										<a href="img/catalogo/standard/st-011.jpg" class="venobox" data-gall="complementos">
+											<img src="img/catalogo/standard/small/st-011.jpg" alt="Im&aacute;gen de producto" class="imgRedon img-responsive" />
+										</a>
+									</li>
+									<li>
+										<a href="img/catalogo/standard/st-012.jpg" class="venobox" data-gall="complementos">
+											<img src="img/catalogo/standard/small/st-012.jpg" alt="Im&aacute;gen de producto" class="imgRedon img-responsive" />
+										</a>
 									</li>
 								</ul>
 							</div>
@@ -395,7 +446,10 @@
 	<!-- @include _footer.html -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-		<!-- @javascript bootstrap.min main -->
+		<!-- @javascript bootstrap.min main venobox -->
+		<script type="text/javascript">
+			$('.venobox').venobox();
+		</script>
 		<script type="text/javascript">
 			$('.listaCata').on('click', function () {
 				$('.targetDiv').hide();
