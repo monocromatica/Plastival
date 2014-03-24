@@ -58,6 +58,9 @@ footer {
   background-color: #428BCA;
   color: #FFFFFF;
 }
+.remover {
+  display: none;
+}
 /*------------------------------------------
 				   Index
 ------------------------------------------*/
@@ -228,21 +231,23 @@ footer {
 .listaProductos {
   list-style: none;
 }
-.tamano {
-  height: 300px;
-}
-#productos hr {
-  border-width: 2px;
-  border-color: #000;
-}
-#productos .imgRedon {
+/*.tamano{
+	width: 600px;
+	height: 600px;
+}*/
+.imgRedon {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   border: 1px solid #F7F7F7;
-  margin: 10px 20px 15px -20px;
+  margin: 15px 20px 35px -20px;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.35);
   height: 300px;
+  width: 200px;
+}
+#productos hr {
+  border-width: 2px;
+  border-color: #000;
 }
 #categorias {
   background-color: #178ED0;
