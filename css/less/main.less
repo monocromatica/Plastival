@@ -95,8 +95,11 @@ footer {
 	padding-right: 5%;
 	padding-top: 7%;
 }
-.lista:hover{
-	height: 500px;
+//.lista:hover{
+//	height: 500px;
+//}
+.tamano{
+	width: 200px;
 }
 #populares{
 	width: 100%;
@@ -148,7 +151,7 @@ footer {
 
 #map-canvas { 
  	width: 100%;
- 	height: 500px;
+ 	height: 250px;
 }
 
 /*--------------------------------------------
@@ -223,7 +226,7 @@ footer {
 		font-weight: 100;
 	}
 	.panel-heading{
-		background-color: @azulP !important;
+		background-color: #243850 !important;
 	}
 	.panel-body{
 		background-color: #EBEBEB !important;
@@ -279,8 +282,9 @@ footer {
 #categorias{
 	background-color: #178ED0;
 	color:#fff;
-	padding: 20px;
+	padding: 2px;
 	.border-radius(10px, 0, 0, 10px);
+	text-align: center;
 }
 #descarga{
 	background-color: #F7F7F7;
@@ -300,12 +304,17 @@ footer {
 		font-style: @Lato;
 		font-weight: 100;
 		font-size: large;
-		border-bottom: 1px solid #999;
+		border-bottom: 1px solid rgba(153, 153, 153,.5);
 		padding: 5%;
 		&:hover{
 			background-color: #EEEEEE;
 		}
 	}
+}
+
+.inline{
+	display:inline-block; 
+	padding-right:20px;
 }
 
 /*--------------------------------------------
