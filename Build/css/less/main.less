@@ -98,8 +98,13 @@ footer {
 //.lista:hover{
 //	height: 500px;
 //}
-.tamano{
-	width: 200px;
+
+h1.titulosSlider {
+	color: white;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	
 }
 #populares{
 	width: 100%;
@@ -107,30 +112,44 @@ footer {
 	position: relative;
 	font-family: @Lato;
 	color: @azulP;
-	#encabezado_populares{
-		margin: 2% 30%;
-	}
+	padding-top: 30px;
+	padding-bottom: 30px;
 	hr{
 		border-color:@azulP;
 		border-width: 2px;
 	}
 	#imagenes_productos{
-		padding: 0 10% 2% 20%;
+/* 		padding: 0 10% 2% 20%; */
 		button{
 			font-family: @Lato;
 		}
+		img {
+			box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.35);
+			.transition(.2s, ease-out);
+			.rounded(5px);
+			&:hover {
+				.scale(1.02);
+			}
+		}
 	}
+
 	#btnProductos{
 		padding: 1% 10% 2% 80%;
 	}
+
 }
 .azul{
 	background-color: @azulR;
 }
 
 #clientes{
+	padding-top: 30px;
+	padding-bottom: 30px;
 	#encabezado_clientes{
 		margin: 2% 30%;
+		color: @azulP;
+	}
+	h1{
 		color: @azulP;
 	}
 	hr{
@@ -141,8 +160,12 @@ footer {
 		margin: 0 5% 3% 17%;
 	}
 	.redondear{
-		.rounded(10px);
-		box-shadow: 1px 1px 4px 1px black;
+		.rounded(5px);
+		box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.35);
+		.transition(.2s, ease-out);
+		&:hover {
+			.scale(1.02);
+		}
 	}
 	#btnClientes{
 		padding: 1% 10% 2% 80%;

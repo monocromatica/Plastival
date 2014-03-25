@@ -92,8 +92,11 @@ footer {
   padding-right: 5%;
   padding-top: 7%;
 }
-.tamano {
-  width: 200px;
+h1.titulosSlider {
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 #populares {
   width: 100%;
@@ -101,19 +104,35 @@ footer {
   position: relative;
   font-family: 'Lato', sans-serif;
   color: #0c2073;
-}
-#populares #encabezado_populares {
-  margin: 2% 30%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 #populares hr {
   border-color: #0c2073;
   border-width: 2px;
 }
 #populares #imagenes_productos {
-  padding: 0 10% 2% 20%;
+  /* 		padding: 0 10% 2% 20%; */
 }
 #populares #imagenes_productos button {
   font-family: 'Lato', sans-serif;
+}
+#populares #imagenes_productos img {
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.35);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#populares #imagenes_productos img:hover {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
 }
 #populares #btnProductos {
   padding: 1% 10% 2% 80%;
@@ -121,8 +140,15 @@ footer {
 .azul {
   background-color: #178ed0;
 }
+#clientes {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 #clientes #encabezado_clientes {
   margin: 2% 30%;
+  color: #0c2073;
+}
+#clientes h1 {
   color: #0c2073;
 }
 #clientes hr {
@@ -133,10 +159,21 @@ footer {
   margin: 0 5% 3% 17%;
 }
 #clientes .redondear {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 4px 1px black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.35);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+#clientes .redondear:hover {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
 }
 #clientes #btnClientes {
   padding: 1% 10% 2% 80%;
