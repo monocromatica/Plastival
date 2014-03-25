@@ -141,7 +141,6 @@ h1.titulosSlider {
   background-color: #178ed0;
 }
 #clientes {
-  padding-top: 30px;
   padding-bottom: 30px;
 }
 #clientes #encabezado_clientes {
@@ -265,6 +264,13 @@ h1.titulosSlider {
   background-position-y: top;
   background-repeat: no-repeat;
 }
+#catalogo {
+  text-align: left;
+  padding: 0;
+}
+#catalogo:hover {
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.35);
+}
 .listaProductos {
   list-style: none;
 }
@@ -349,6 +355,10 @@ h1.titulosSlider {
 .inline {
   display: inline-block;
   padding-right: 20px;
+}
+.standardUno img:hover {
+  width: 202px;
+  height: 305px transition-duration(0.2s);
 }
 /*--------------------------------------------
 					Clientes
