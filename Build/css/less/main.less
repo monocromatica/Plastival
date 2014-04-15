@@ -10,6 +10,7 @@
 @azulS: #24394f;
 @azulL1: #32c5d7;
 @azulL2: #9cdde4;
+@verde: #5CB85C;
 @Lato: 'Lato', sans-serif;
 
 
@@ -18,7 +19,9 @@
 /* ---------------------------------------------
 				generales
 --------------------------------------------- */
-
+p {
+	text-align: justify;
+}
 header {
 	background-color: #ffffff;
 	font-family: @Lato;
@@ -36,9 +39,9 @@ header {
 		margin-bottom: 30px;
 		.border-radius(0px, 7px, 7px, 0px);
 		p{
-			font-size: 18px;
+			font-size: 16px;
 			margin-left: 5px;
-			margin-right: 15px;
+			margin-right: 10px;
 		}
 
 	}
@@ -64,6 +67,18 @@ footer {
 }
 .remover{
 	display: none;
+}
+
+a.down {
+	background: @verde;
+	color: white;
+	.rounded(5px);
+	padding: 15px 20px;
+	.transition(.2s, ease-out);
+	&:hover{
+		background: darken(@verde, 10%);
+		text-decoration: none;
+	}
 }
 /*------------------------------------------
 				   Index
@@ -141,6 +156,19 @@ h1.titulosSlider {
 	}
 
 }
+.prod {
+	background: @azulP;
+	color: white;
+	padding: 5px;
+	font-size: 14px;
+	margin-top: -40px;
+	z-index: 2;
+	width: 90%;
+	position: relative;
+	.border-radius(5px, 5px, 0, 0);
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
 .azul{
 	background-color: @azulR;
 }
